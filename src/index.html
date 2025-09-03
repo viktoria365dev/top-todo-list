@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP Todo List</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TOP Todo List</h1>
+    </header>
+
+    <section id="app">
+      <aside class="sidebar">
+        <form id="project-form">
+          <input
+            type="text"
+            id="project-input"
+            placeholder="New project…"
+            required
+          />
+          <button type="submit">Add Project</button>
+        </form>
+        <ul id="project-list"></ul>
+      </aside>
+
+      <main class="content">
+        <h2 id="current-project-title">Make a project</h2>
+        <form id="todo-form" class="hidden">
+          <input type="text" id="todo-input" placeholder="New todo…" required />
+          <button type="submit">Add Todo</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </main>
+    </section>
+
+    <footer>
+      <p>The Odin Project Todo List</p>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
