@@ -43,7 +43,7 @@ function createProjectItem(proj) {
   li.classList.toggle("selected", proj.id === activeProjectId);
   li.innerHTML = `
     <span class="label">${proj.title}</span>
-    <button class="button-small delete-proj">✕</button>
+    <button class="button-small delete-proj">🗑️</button>
   `;
 
   return li;
@@ -65,9 +65,9 @@ function createTodoItem(todo, project) {
     <span class="label">${prefix}${todo.text}</span>
     <div>
       <button class="button-small toggle-todo">
-        ${todo.done ? "↺" : "✓"}
+        ${todo.done ? "🔄" : "✅"}
       </button>
-      <button class="button-small delete-todo">✕</button>
+      <button class="button-small delete-todo">🗑️</button>
     </div>
   `;
 
